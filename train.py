@@ -1,4 +1,4 @@
-from model import build_transformer
+from model_lightning import build_transformer
 from dataset import BillingualDataset, casual_mask
 from config_file import get_config, get_weights_file_path
 
@@ -255,5 +255,3 @@ if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     config = get_config()
     train_model(config)
-    
-    
